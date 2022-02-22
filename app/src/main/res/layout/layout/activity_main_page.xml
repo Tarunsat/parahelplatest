@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main_page"
+    android:orientation="vertical"
+    android:background="@drawable/parahelpbg5">
+
+
+
+    <androidx.cardview.widget.CardView
+
+
+        android:id="@+id/cardView2"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        app:cardBackgroundColor="#D7FAE4"
+        app:cardCornerRadius="40dp"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/sentence"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:textSize="20dp"
+                android:textAlignment="center"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/prompts" />
+
+            <TextView
+                android:id="@+id/prompts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_marginBottom="5dp"
+                android:text="You are typing:"
+                android:textSize="22dp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toTopOf="@+id/sentence"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+
+
+
+        app:cardCornerRadius="40dp"
+        >
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <Button
+            android:onClick="Reseta"
+            android:id="@+id/backspace"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#2F5569"
+            android:text="blink to backspace" />
+
+            <Button
+                android:onClick="Read"
+                android:layout_weight="1"
+                android:id="@+id/read"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#2F5569"
+                android:text="close eyes to read"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:background="@color/white"
+        app:cardBackgroundColor="#73C6C8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+
+
+
+
+        app:cardCornerRadius="40dp"
+
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+        android:clickable="true"
+        android:padding="20dp"
+        android:layout_weight="1"
+        android:id="@+id/top_left"
+        app:cardBackgroundColor="#D7FAE4"
+            android:layout_width="match_parent"
+            android:layout_height="150sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:onClick="tl_button"
+
+            app:cardCornerRadius="40dp"
+        >
+        <LinearLayout
+            android:onClick="tl_button"
+            android:id="@+id/tl_view"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:onClick="tl_button"
+                android:layout_gravity="center"
+
+                android:background="#427B7D"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:id="@+id/tl"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:onClick="tl_button"
+                android:id="@+id/tl_recycler"
+                android:layout_marginLeft="5dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+
+
+app:cardBackgroundColor="#D7FAE4"
+        android:id="@+id/top_right"
+        android:padding="20dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="150sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="tr_button"
+
+        app:cardCornerRadius="40dp"
+        >
+        <LinearLayout
+
+            android:onClick="tr_button"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+
+                android:background="#427B7D"
+                android:id="@+id/tr"
+                android:onClick="tr_button"
+                android:layout_gravity="center"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+
+                android:textStyle="bold"
+                android:textSize="20dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+
+                android:onClick="tr_button"
+                android:id="@+id/tr_recycler"
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+
+            <androidx.cardview.widget.CardView
+
+
+                app:cardBackgroundColor="#D7FAE4"
+                android:id="@+id/bottom_left"
+                android:padding="20dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="150sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:onClick="bl_button"
+
+                app:cardCornerRadius="40dp"
+               >
+
+                <LinearLayout
+                    android:onClick="bl_button"
+                    android:orientation="vertical"
+                    android:clickable="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <TextView
+                    android:onClick="bl_button"
+                    android:background="#427B7D"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/bl"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:onClick="bl_button"
+                    android:id="@+id/bl_recycler"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                     />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:clickable="true"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/bottom_right"
+                android:padding="20dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="150sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:onClick="br_button"
+                app:cardBackgroundColor="#D7FAE4"
+                app:cardCornerRadius="40dp"
+               >
+                <LinearLayout
+                    android:clickable="true"
+                    android:onClick="br_button"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <TextView
+                    android:onClick="br_button"
+                    android:background="#427B7D"
+                    android:id="@+id/br"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:onClick="br_button"
+                    android:id="@+id/br_recycler"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                     />
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
