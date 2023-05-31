@@ -31,13 +31,10 @@ Welcome to Parahelp, an innovative communication app designed to assist individu
 8. Convert constructed sentences into spoken words using the speech synthesis feature.
 9. Communicate effectively with others using Parahelp!
 
-## Contributing
-
-Contributions to EyeSpeak are welcome! If you have any ideas, suggestions, or bug fixes, please feel free to submit a pull request. For major changes, please open an issue first to discuss the proposed changes.
 
 ## Acknowledgments
 
 - Parahelp utilizes eye tracking technology to enable communication for individuals with locked-in syndrome.
 - Special thanks to the open-source community for their valuable contributions.
 
-Feel free to explore the code and contribute to improving EyeSpeak to better serve individuals with locked-in syndrome. Together, let's make a difference in enabling communication and enhancing quality of life!
+ Together, let's make a difference in enabling communication and enhancing quality of life!
