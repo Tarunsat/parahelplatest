@@ -21,7 +21,7 @@ Welcome to Parahelp, an innovative communication app designed to assist individu
 
 ## Usage
 
-1. Launch the EyeSpeak app on your Android device.
+1. Launch the Parahelp app on your Android device.
 2. Grant necessary permissions for eye tracking and speech synthesis.
 3. Calibrate the eye tracking system according to the app's instructions.
 4. The app's interface will display a list of words and phrases.
